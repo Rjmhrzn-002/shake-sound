@@ -2,7 +2,7 @@
 
 Project context for Claude Code. Read this before editing. For the full story of
 *why* this project exists (the sessions, the audience, decisions made, what's
-still open), see `HANDOVER.md`.
+still open), see `.notes/HANDOVER.md`.
 
 ## What this is
 
@@ -20,7 +20,7 @@ it's a self-contained repo you run from `example/`. Built against **Expo SDK 57*
 
 It is intentionally small and structured to be *taught in order*. Do not add
 features, abstractions, or dependencies unless asked — clarity for readers, and
-the session flow (`SESSIONS.md`), come first. The sessions are **not live-coded**;
+the session flow (`.notes/SESSIONS.md`), come first. The sessions are **not live-coded**;
 the code is presented as finished files, so keep it clean and readable.
 
 ## Start here (getting the demo running)
@@ -83,7 +83,7 @@ The immediate goal is a working demo on a real device. In order:
 ## Session structure (why the code is shaped this way)
 
 The module grows across two sessions, and the boundary is a literal banner in the
-native files. See `SESSIONS.md` for the full plan.
+native files. See `.notes/SESSIONS.md` for the full plan.
 
 - **Session 1 — Functions & AsyncFunctions:** `Function("playSound")` (sync) and
   `AsyncFunction("filterAvailable")` (returns a Promise). No shake yet.
@@ -124,8 +124,8 @@ escalation) should be JS-only, native untouched.
 | `expo-module.config.json` | Registers the native module classes per platform. | — |
 | `ios/ShakeSound.podspec` | iOS build spec (+ where module-bundled sounds go). | — |
 | `android/build.gradle` | Android module build config. | — |
-| `SESSIONS.md` | Session-by-session teaching plan mapped to these files. | — |
-| `HANDOVER.md` | Full project context (initiative, decisions, open tasks). | — |
+| `.notes/SESSIONS.md` | Session-by-session teaching plan mapped to these files. | — |
+| `.notes/HANDOVER.md` | Full project context (initiative, decisions, open tasks). | — |
 
 ## The shared contract (read before editing any module file)
 
