@@ -8,7 +8,8 @@
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "expo.modules.shakesound.example"
+      "bundleIdentifier": "expo.modules.shakesound.example",
+      "appleTeamId": "RWWN85PDLH"
     },
     "android": {
       "adaptiveIcon": {

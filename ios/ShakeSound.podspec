@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name           = 'ShakeSound'
   s.version        = '1.0.0'
-  s.summary        = 'A sample project summary'
-  s.description    = 'A sample project description'
+  s.summary        = 'Shake the phone to play a random meme sound.'
+  s.description    = 'Teaching-demo Expo module: accelerometer + audio + a native meter view.'
   s.author         = ''
   s.homepage       = 'https://docs.expo.dev/modules/'
   s.platforms      = {
@@ -20,4 +20,8 @@ Pod::Spec.new do |s|
   }
 
   s.source_files = "**/*.{h,m,mm,swift,hpp,cpp}"
+
+  # Meme clips are copied into the app bundle so `Bundle.main` finds them by name.
+  # Drop <name>.mp3 files (matching MEME_SOUNDS) into ios/Resources/.
+  s.resources = "Resources/*.mp3"
 end
